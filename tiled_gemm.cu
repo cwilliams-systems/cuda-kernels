@@ -75,7 +75,7 @@ int main(){
     dim3 gridDim((N + TILE_WIDTH - 1)/TILE_WIDTH,
                  (M + TILE_WIDTH - 1)/TILE_WIDTH);
 
-    // CUDA event timing
+    
     cudaEvent_t start, stop;
     cudaEventCreate(&start);
     cudaEventCreate(&stop);
