@@ -45,7 +45,7 @@ int main(){
     dim3 gridDim((N + blockDim.x - 1)/blockDim.x,
                  (M + blockDim.y - 1)/blockDim.y);
 
-    // CUDA event timing
+    
     cudaEvent_t start, stop;
     cudaEventCreate(&start);
     cudaEventCreate(&stop);
